@@ -11,9 +11,9 @@ export const metadata: Metadata = {
   description:
     "Merasc Technologies develops software products and digital tools for online businesses across e-commerce, SaaS, AI, and connected systems.",
   icons: {
-    icon: "/merasc-kare-removebg.png",
-    shortcut: "/merasc-kare-removebg.png",
-    apple: "/merasc-kare-removebg.png",
+    icon: "/merasc-kare-siyah-removebg.png",
+    shortcut: "/merasc-kare-siyah-removebg.png",
+    apple: "/merasc-kare-siyah-removebg.png",
   },
 }
 

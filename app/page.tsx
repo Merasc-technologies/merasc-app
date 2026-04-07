@@ -108,7 +108,7 @@ export default function Page() {
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,_rgba(53,161,255,0.18),_transparent_28%),radial-gradient(circle_at_80%_20%,_rgba(68,232,196,0.16),_transparent_24%),linear-gradient(180deg,_rgba(10,18,33,1)_0%,_rgba(7,12,23,1)_45%,_rgba(244,247,251,1)_45%,_rgba(244,247,251,1)_100%)]" />
       <div className="absolute inset-x-0 top-0 -z-10 h-24 bg-gradient-to-b from-white/[0.08] to-transparent" />
 
-      <section className="mx-auto flex w-full max-w-7xl flex-col px-6 pb-20 pt-6 lg:px-10">
+      <section className="mx-auto flex w-full max-w-7xl flex-col px-6 pt-6 pb-20 lg:px-10">
         <header className="mb-16 flex items-center justify-between rounded-full border border-white/10 bg-white/5 px-4 py-3 backdrop-blur md:px-6">
           <Link
             href="/"
@@ -157,10 +157,10 @@ export default function Page() {
             </h1>
             <p className="mt-6 max-w-2xl text-base leading-8 text-white/[0.72] md:text-lg">
               Merasc Technologies develops software products and digital tools
-              for online businesses. We focus on e-commerce infrastructure,
-              SaaS applications, AI-powered workflows, and hardware-aware
-              software that helps teams operate with more clarity and less
-              manual overhead.
+              for online businesses. We focus on e-commerce infrastructure, SaaS
+              applications, AI-powered workflows, and hardware-aware software
+              that helps teams operate with more clarity and less manual
+              overhead.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -191,17 +191,6 @@ export default function Page() {
           <div className="relative">
             <div className="rounded-[2rem] border border-white/10 bg-white/[0.08] p-5 shadow-2xl shadow-cyan-950/30 backdrop-blur">
               <div className="overflow-hidden rounded-[1.5rem] border border-white/10 bg-slate-950/75">
-                <div className="flex items-center justify-between border-b border-white/10 px-6 py-4">
-                  <p className="text-sm font-medium text-white">
-                    Hero visual slot
-                  </p>
-                  <div className="flex gap-2">
-                    <span className="size-2 rounded-full bg-emerald-400" />
-                    <span className="size-2 rounded-full bg-cyan-300" />
-                    <span className="size-2 rounded-full bg-white/40" />
-                  </div>
-                </div>
-
                 <div className="relative aspect-[4/5] bg-[radial-gradient(circle_at_20%_20%,_rgba(103,232,249,0.25),_transparent_24%),radial-gradient(circle_at_80%_30%,_rgba(59,130,246,0.26),_transparent_22%),linear-gradient(180deg,_rgba(2,6,23,1)_0%,_rgba(12,25,49,1)_100%)]">
                   <Image
                     src="/merasc-hero.jpg"
@@ -212,42 +201,8 @@ export default function Page() {
                     sizes="(min-width: 1024px) 40vw, 100vw"
                   />
                   <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(2,6,23,0.04)_0%,rgba(2,6,23,0.28)_100%)]" />
-                  <div className="absolute inset-x-0 bottom-0 p-6 md:p-8">
-                    <div className="grid gap-3 sm:grid-cols-2">
-                      <div className="rounded-[1.25rem] border border-white/10 bg-slate-950/45 p-4 backdrop-blur-sm">
-                        <p className="text-xs font-medium tracking-[0.18em] text-cyan-100 uppercase">
-                          Aspect ratio
-                        </p>
-                        <p className="mt-2 text-lg font-semibold text-white">
-                          4:5 portrait
-                        </p>
-                        <p className="mt-1 text-sm text-white/60">
-                          Best fit for this hero block
-                        </p>
-                      </div>
-
-                      <div className="rounded-[1.25rem] border border-white/10 bg-slate-950/45 p-4 backdrop-blur-sm">
-                        <p className="text-xs font-medium tracking-[0.18em] text-cyan-100 uppercase">
-                          Suggested size
-                        </p>
-                        <p className="mt-2 text-lg font-semibold text-white">
-                          1200 × 1500
-                        </p>
-                        <p className="mt-1 text-sm text-white/60">
-                          Also safe at 1600 × 2000
-                        </p>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
-            </div>
-            <div className="absolute -bottom-5 -left-5 hidden rounded-2xl border border-white/10 bg-white/10 px-4 py-3 text-sm text-white/80 backdrop-blur md:block">
-              Image-ready slot
-              <p className="mt-1 text-xs text-white/[0.55]">
-                When your image is ready, this block can be swapped with
-                `next/image` directly.
-              </p>
             </div>
           </div>
         </div>
@@ -267,7 +222,7 @@ export default function Page() {
           </h2>
         </div>
 
-        <div className="grid gap-5 mb-20 md:grid-cols-2 xl:grid-cols-4">
+        <div className="mb-20 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
           {focusAreas.map((item) => {
             const Icon = item.icon
 
@@ -314,20 +269,20 @@ export default function Page() {
             const Icon = item.icon
 
             return (
-            <div
-              key={item.title}
-              className="rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-[0_20px_50px_-40px_rgba(15,23,42,0.4)] transition-transform duration-300 hover:-translate-y-1"
-            >
-              <div className="mb-5 flex size-12 items-center justify-center rounded-2xl bg-slate-950 text-cyan-200">
-                <Icon className="size-5" />
+              <div
+                key={item.title}
+                className="rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-[0_20px_50px_-40px_rgba(15,23,42,0.4)] transition-transform duration-300 hover:-translate-y-1"
+              >
+                <div className="mb-5 flex size-12 items-center justify-center rounded-2xl bg-slate-950 text-cyan-200">
+                  <Icon className="size-5" />
+                </div>
+                <h3 className="text-lg font-semibold text-slate-950">
+                  {item.title}
+                </h3>
+                <p className="mt-3 text-sm leading-7 text-slate-600">
+                  {item.description}
+                </p>
               </div>
-              <h3 className="text-lg font-semibold text-slate-950">
-                {item.title}
-              </h3>
-              <p className="mt-3 text-sm leading-7 text-slate-600">
-                {item.description}
-              </p>
-            </div>
             )
           })}
         </div>
@@ -369,7 +324,10 @@ export default function Page() {
         </div>
       </section>
 
-      <section id="contact" className="mx-auto w-full max-w-7xl px-6 py-20 lg:px-10">
+      <section
+        id="contact"
+        className="mx-auto w-full max-w-7xl px-6 py-20 lg:px-10"
+      >
         <div className="rounded-[2rem] border border-slate-200 bg-[linear-gradient(135deg,_#0f172a_0%,_#082f49_55%,_#164e63_100%)] p-8 text-white shadow-[0_30px_80px_-35px_rgba(8,47,73,0.6)] md:p-10">
           <p className="text-sm font-semibold tracking-[0.22em] text-cyan-100 uppercase">
             Next Step

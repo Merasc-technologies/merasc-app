@@ -9,7 +9,7 @@ export function SiteFooter() {
           <div className="max-w-md">
             <div className="flex items-center gap-4">
               <Image
-                src="/merasc-kare-removebg.png"
+                src="/merasc-kare-siyah-removebg.png"
                 alt="Merasc Technologies square logo"
                 width={96}
                 height={96}
